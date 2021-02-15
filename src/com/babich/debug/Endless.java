@@ -12,7 +12,7 @@ public class Endless {
             }
         }
     }
-
+    
     private static void process(int read) {
         if (Math.max(read, 90) % 2 == 0) {
             System.out.println("!");
@@ -20,6 +20,6 @@ public class Endless {
     }
 
     private static boolean filter(int read) {
-        return read != '\n' && read != 'a';
+        return read != 10 && read != 'a';
     }
 }
